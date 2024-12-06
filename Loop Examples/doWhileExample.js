@@ -17,8 +17,10 @@ submitButton.addEventListener("click", () => {
             passwordInput.disabled = true;
             submitButton.disabled - true;
             break;
+        } else{
+        outputDiv.innerHTML += `Incorrect password. Attempt ${++atempt}. Try again. <br>`;
+        passwordInput.value = ""; //Clear the input field for another attempt
+        }while {
+            (password !== correctPassword && !passwordInput.disabled);
         }
-    } else{
-        outputDiv.innerHTML
-    }
-});
+    });
